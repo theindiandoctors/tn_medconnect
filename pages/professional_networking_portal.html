@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Networking Portal - TN MedConnect</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Connect with Tamil Nadu's medical professionals through intelligent networking, specialty-based matching, and regional collaboration opportunities." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftnmedconn9187back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-clinical border-b border-border sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                            <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            <circle cx="20" cy="15" r="3" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-inter font-bold text-primary">TN MedConnect</h1>
+                        <p class="text-xs text-text-secondary">Medical Excellence Network</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_medical_professional_platform.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Home</a>
+                        <a href="knowledge_hub_medical_resources.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Knowledge Hub</a>
+                        <a href="career_development_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Career Center</a>
+                        <a href="professional_networking_portal.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Networking</a>
+                        <a href="professional_dashboard.html" class="btn-primary text-sm">Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-primary-100 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="text-center">
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-secondary leading-tight mb-6">
+                    Professional <span class="text-gradient">Networking Portal</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Connect with Tamil Nadu's medical community through intelligent matching, specialty-based networking, and regional collaboration opportunities
+                </p>
+                
+                <!-- Quick Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="btn-primary">Find Specialists</button>
+                    <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-clinical">Join Discussion</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search & Filter Section -->
+    <section class="py-12 bg-white border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-surface rounded-lg p-6 shadow-clinical">
+                <div class="grid lg:grid-cols-4 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-text-secondary mb-2">Search Professionals</label>
+                        <div class="relative">
+                            <input type="text" placeholder="Name, specialty, institution..." class="input-field pl-10" />
+                            <svg class="w-5 h-5 text-text-secondary absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-text-secondary mb-2">Medical Specialty</label>
+                        <select class="input-field">
+                            <option>All Specialties</option>
+                            <option>Cardiology</option>
+                            <option>Orthopedics</option>
+                            <option>Pediatrics</option>
+                            <option>Internal Medicine</option>
+                            <option>Surgery</option>
+                            <option>Radiology</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-text-secondary mb-2">Location</label>
+                        <select class="input-field">
+                            <option>All Tamil Nadu</option>
+                            <option>Chennai</option>
+                            <option>Coimbatore</option>
+                            <option>Madurai</option>
+                            <option>Trichy</option>
+                            <option>Salem</option>
+                            <option>Vellore</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button class="btn-primary w-full">
+                            <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                            </svg>
+                            Filter Results
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Left Sidebar - Quick Access -->
+                <div class="lg:col-span-1">
+                    <div class="space-y-6">
+                        <!-- My Network Stats -->
+                        <div class="card">
+                            <h3 class="text-lg font-inter font-semibold text-secondary mb-4">My Network</h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-secondary">Connections</span>
+                                    <span class="font-semibold text-primary">247</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-secondary">Following</span>
+                                    <span class="font-semibold text-primary">89</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-text-secondary">Followers</span>
+                                    <span class="font-semibold text-primary">156</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary w-full mt-4">View My Network</button>
+                        </div>
+
+                        <!-- Specialty Forums -->
+                        <div class="card">
+                            <h3 class="text-lg font-inter font-semibold text-secondary mb-4">Specialty Forums</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-primary-50 rounded-lg border border-primary-200">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-secondary text-sm">Cardiology</p>
+                                            <p class="text-xs text-text-secondary">1,245 members</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs bg-success text-white px-2 py-1 rounded">Active</span>
+                                </div>
+                                
+                                <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-warning-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3h2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm8 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-secondary text-sm">Orthopedics</p>
+                                            <p class="text-xs text-text-secondary">892 members</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-secondary text-sm">Pediatrics</p>
+                                            <p class="text-xs text-text-secondary">756 members</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="text-primary font-semibold text-sm mt-4 hover:text-primary-700 transition-clinical">View All Forums</button>
+                        </div>
+
+                        <!-- Regional Networks -->
+                        <div class="card">
+                            <h3 class="text-lg font-inter font-semibold text-secondary mb-4">Regional Networks</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3 p-3 bg-surface rounded-lg">
+                                    <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-secondary text-sm">Chennai Medical Network</p>
+                                        <p class="text-xs text-text-secondary">2,156 professionals</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center space-x-3 p-3 bg-surface rounded-lg">
+                                    <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-semibold text-secondary text-sm">Coimbatore Doctors</p>
+                                        <p class="text-xs text-text-secondary">1,234 professionals</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Content Area -->
+                <div class="lg:col-span-2">
+                    <div class="space-y-8">
+                        <!-- Suggested Connections -->
+                        <div class="card">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-xl font-inter font-semibold text-secondary">Suggested Connections</h3>
+                                <button class="text-primary font-semibold text-sm hover:text-primary-700 transition-clinical">View All</button>
+                            </div>
+                            
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="bg-surface rounded-lg p-6 border border-border">
+                                    <div class="flex items-start space-x-4">
+                                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Rajesh Kumar" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <h4 class="font-inter font-semibold text-secondary">Dr. Rajesh Kumar</h4>
+                                            <p class="text-sm text-text-secondary">Senior Cardiologist</p>
+                                            <p class="text-sm text-text-secondary">AIIMS Madurai</p>
+                                            <div class="flex items-center mt-2 space-x-2">
+                                                <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Cardiology</span>
+                                                <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">15+ years</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3 mt-4">
+                                        <button class="btn-primary flex-1 text-sm">Connect</button>
+                                        <button class="bg-surface text-text-secondary border border-border px-4 py-2 rounded-lg text-sm hover:bg-border transition-clinical">View Profile</button>
+                                    </div>
+                                </div>
+
+                                <div class="bg-surface rounded-lg p-6 border border-border">
+                                    <div class="flex items-start space-x-4">
+                                        <img src="https://images.unsplash.com/photo-1594824475317-87eaac2d3e3d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Priya Sharma" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/06/12/06/people-2592247_1280.jpg'; this.onerror=null;" />
+                                        <div class="flex-1">
+                                            <h4 class="font-inter font-semibold text-secondary">Dr. Priya Sharma</h4>
+                                            <p class="text-sm text-text-secondary">Head of Pediatrics</p>
+                                            <p class="text-sm text-text-secondary">CMC Vellore</p>
+                                            <div class="flex items-center mt-2 space-x-2">
+                                                <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Pediatrics</span>
+                                                <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Research</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex space-x-3 mt-4">
+                                        <button class="btn-primary flex-1 text-sm">Connect</button>
+                                        <button class="bg-surface text-text-secondary border border-border px-4 py-2 rounded-lg text-sm hover:bg-border transition-clinical">View Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Activity Feed -->
+                        <div class="card">
+                            <h3 class="text-xl font-inter font-semibold text-secondary mb-6">Recent Network Activity</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start space-x-4 pb-6 border-b border-border">
+                                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Profile" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/03/14/03/20/woman-2141808_1280.jpg'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <p class="text-secondary">
+                                            <span class="font-semibold">Dr. Arun Krishnan</span> shared a new case study on 
+                                            <span class="text-primary">"Minimally Invasive Cardiac Surgery Techniques"</span>
+                                        </p>
+                                        <p class="text-sm text-text-secondary mt-1">2 hours ago • Cardiology Forum</p>
+                                        <div class="flex items-center space-x-4 mt-3">
+                                            <button class="text-primary text-sm hover:text-primary-700 transition-clinical">
+                                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                                </svg>
+                                                Like (24)
+                                            </button>
+                                            <button class="text-text-secondary text-sm hover:text-primary transition-clinical">
+                                                <svg class="w-4 h-4 inline mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                                </svg>
+                                                Comment (8)
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4 pb-6 border-b border-border">
+                                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Profile" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <p class="text-secondary">
+                                            <span class="font-semibold">Dr. Meera Patel</span> joined the 
+                                            <span class="text-primary">Pediatric Emergency Medicine</span> discussion group
+                                        </p>
+                                        <p class="text-sm text-text-secondary mt-1">4 hours ago • Professional Groups</p>
+                                        <div class="flex items-center space-x-4 mt-3">
+                                            <button class="text-primary text-sm hover:text-primary-700 transition-clinical">Welcome</button>
+                                            <button class="text-text-secondary text-sm hover:text-primary transition-clinical">View Group</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start space-x-4">
+                                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Profile" class="w-12 h-12 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div class="flex-1">
+                                        <p class="text-secondary">
+                                            New discussion started: <span class="text-primary">"Post-COVID Rehabilitation Protocols"</span> 
+                                            in Internal Medicine Forum
+                                        </p>
+                                        <p class="text-sm text-text-secondary mt-1">6 hours ago • Internal Medicine</p>
+                                        <div class="flex items-center space-x-4 mt-3">
+                                            <button class="text-primary text-sm hover:text-primary-700 transition-clinical">Join Discussion</button>
+                                            <span class="text-text-secondary text-sm">12 replies</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Groups -->
+                        <div class="card">
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="text-xl font-inter font-semibold text-secondary">Professional Groups</h3>
+                                <button class="text-primary font-semibold text-sm hover:text-primary-700 transition-clinical">Create Group</button>
+                            </div>
+                            
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="bg-surface rounded-lg p-6 border border-border">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-secondary">AIIMS Alumni Network</h4>
+                                            <p class="text-sm text-text-secondary">1,456 members</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Connect with fellow AIIMS graduates across Tamil Nadu and beyond.</p>
+                                    <button class="btn-primary w-full text-sm">Join Group</button>
+                                </div>
+
+                                <div class="bg-surface rounded-lg p-6 border border-border">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"/>
+                                                <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-secondary">Research Collaborators</h4>
+                                            <p class="text-sm text-text-secondary">892 members</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-text-secondary mb-4">Multi-institutional research collaboration and academic partnerships.</p>
+                                    <button class="bg-white text-success border border-success px-4 py-2 rounded-lg text-sm font-semibold w-full hover:bg-success-50 transition-clinical">Joined</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-secondary mb-4">
+                    Upcoming Networking Events
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Connect in person at medical conferences and professional gatherings
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="card card-hover">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-secondary">Tamil Nadu Medical Conference</h3>
+                            <p class="text-sm text-text-secondary">Feb 15-17, 2025 • Chennai</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Annual gathering of Tamil Nadu's medical professionals with networking sessions and CME programs.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-success font-semibold">250+ Attendees</span>
+                        <button class="btn-primary text-sm">Register</button>
+                    </div>
+                </div>
+
+                <div class="card card-hover">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-secondary">Cardiology Symposium</h3>
+                            <p class="text-sm text-text-secondary">Mar 8, 2025 • Coimbatore</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Specialized networking event for cardiovascular specialists and related professionals.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-success font-semibold">120+ Attendees</span>
+                        <button class="btn-primary text-sm">Register</button>
+                    </div>
+                </div>
+
+                <div class="card card-hover">
+                    <div class="flex items-start space-x-4 mb-4">
+                        <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-secondary">Young Doctors Meet</h3>
+                            <p class="text-sm text-text-secondary">Mar 22, 2025 • Madurai</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary mb-4">Networking event specifically designed for residents and early-career physicians.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-success font-semibold">180+ Attendees</span>
+                        <button class="btn-primary text-sm">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-white mb-6">
+                    Expand Your Professional Network Today
+                </h2>
+                <p class="text-xl text-primary-100 mb-8">
+                    Connect with Tamil Nadu's medical professionals and advance your career through meaningful relationships
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary px-8 py-4 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-clinical">
+                        Start Networking
+                    </button>
+                    <a href="professional_dashboard.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-white hover:text-primary transition-clinical">
+                        View Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                            <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            <circle cx="20" cy="15" r="3" fill="white"/>
+                        </svg>
+                        <div class="ml-3">
+                            <h3 class="text-xl font-inter font-bold">TN MedConnect</h3>
+                            <p class="text-secondary-400 text-sm">Medical Excellence Network</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        Empowering Tamil Nadu's medical professionals through connected knowledge, collaborative learning, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="knowledge_hub_medical_resources.html" class="hover:text-white transition-clinical">Knowledge Hub</a></li>
+                        <li><a href="career_development_center.html" class="hover:text-white transition-clinical">Career Center</a></li>
+                        <li><a href="professional_networking_portal.html" class="hover:text-white transition-clinical">Networking</a></li>
+                        <li><a href="professional_dashboard.html" class="hover:text-white transition-clinical">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#" class="hover:text-white transition-clinical">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center text-secondary-400">
+                <p>&copy; 2025 TN MedConnect. All Rights Reserved. | Advancing Tamil Nadu's Medical Excellence</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

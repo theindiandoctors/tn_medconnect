@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors - Medical Authority */
+  --color-primary: #1e40af; /* blue-700 - Authoritative medical trust */
+  --color-primary-50: #eff6ff; /* blue-50 */
+  --color-primary-100: #dbeafe; /* blue-100 */
+  --color-primary-200: #bfdbfe; /* blue-200 */
+  --color-primary-300: #93c5fd; /* blue-300 */
+  --color-primary-400: #60a5fa; /* blue-400 */
+  --color-primary-500: #3b82f6; /* blue-500 */
+  --color-primary-600: #2563eb; /* blue-600 */
+  --color-primary-700: #1d4ed8; /* blue-700 */
+  --color-primary-800: #1e3a8a; /* blue-800 */
+  --color-primary-900: #1e40af; /* blue-900 */
+
+  /* Secondary Colors - Professional Depth */
+  --color-secondary: #0f172a; /* slate-900 - Professional depth */
+  --color-secondary-50: #f8fafc; /* slate-50 */
+  --color-secondary-100: #f1f5f9; /* slate-100 */
+  --color-secondary-200: #e2e8f0; /* slate-200 */
+  --color-secondary-300: #cbd5e1; /* slate-300 */
+  --color-secondary-400: #94a3b8; /* slate-400 */
+  --color-secondary-500: #64748b; /* slate-500 */
+  --color-secondary-600: #475569; /* slate-600 */
+  --color-secondary-700: #334155; /* slate-700 */
+  --color-secondary-800: #1e293b; /* slate-800 */
+  --color-secondary-900: #0f172a; /* slate-900 */
+
+  /* Accent Colors - Critical Alerts */
+  --color-accent: #dc2626; /* red-600 - Critical medical attention */
+  --color-accent-50: #fef2f2; /* red-50 */
+  --color-accent-100: #fee2e2; /* red-100 */
+  --color-accent-200: #fecaca; /* red-200 */
+  --color-accent-300: #fca5a5; /* red-300 */
+  --color-accent-400: #f87171; /* red-400 */
+  --color-accent-500: #ef4444; /* red-500 */
+  --color-accent-600: #dc2626; /* red-600 */
+  --color-accent-700: #b91c1c; /* red-700 */
+  --color-accent-800: #991b1b; /* red-800 */
+  --color-accent-900: #7f1d1d; /* red-900 */
+
+  /* Background Colors */
+  --color-background: #fefefe; /* neutral-50 - Clean clinical canvas */
+  --color-surface: #f8fafc; /* slate-50 - Subtle content separation */
+
+  /* Text Colors */
+  --color-text-primary: #0f172a; /* slate-900 - Extended reading clarity */
+  --color-text-secondary: #64748b; /* slate-500 - Supporting information */
+
+  /* Status Colors */
+  --color-success: #059669; /* emerald-600 - Positive medical outcomes */
+  --color-success-50: #ecfdf5; /* emerald-50 */
+  --color-success-100: #d1fae5; /* emerald-100 */
+  --color-success-500: #10b981; /* emerald-500 */
+  --color-success-600: #059669; /* emerald-600 */
+
+  --color-warning: #d97706; /* amber-600 - Important medical cautions */
+  --color-warning-50: #fffbeb; /* amber-50 */
+  --color-warning-100: #fef3c7; /* amber-100 */
+  --color-warning-500: #f59e0b; /* amber-500 */
+  --color-warning-600: #d97706; /* amber-600 */
+
+  --color-error: #dc2626; /* red-600 - Critical medical alerts */
+  --color-error-50: #fef2f2; /* red-50 */
+  --color-error-100: #fee2e2; /* red-100 */
+  --color-error-500: #ef4444; /* red-500 */
+  --color-error-600: #dc2626; /* red-600 */
+
+  /* Border Colors */
+  --color-border: #e2e8f0; /* slate-200 - Clean separation */
+  --color-border-light: #f1f5f9; /* slate-100 */
+
+  /* Shadow Variables */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .font-accent {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+/* Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-300 ease-in-out hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-300 ease-in-out hover:bg-secondary-800 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md border border-border p-6 transition-all duration-300 ease-in-out;
+  }
+
+  .card-hover {
+    @apply hover:shadow-lg hover:border-primary-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 ease-in-out;
+  }
+
+  .medical-alert {
+    @apply border-l-4 border-accent bg-accent-50 p-4 rounded-r-lg;
+  }
+
+  .success-alert {
+    @apply border-l-4 border-success bg-success-50 p-4 rounded-r-lg;
+  }
+
+  .warning-alert {
+    @apply border-l-4 border-warning bg-warning-50 p-4 rounded-r-lg;
+  }
+}
+
+/* Utility Classes */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .shadow-clinical {
+    box-shadow: var(--shadow-md);
+  }
+
+  .transition-clinical {
+    transition: all 300ms ease-in-out;
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - TN MedConnect</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Login to TN MedConnect - Tamil Nadu's premier medical professional platform" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftnmedconn9187back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-gradient-to-br from-primary-50 to-primary-100 min-h-screen flex items-center justify-center font-source-sans">
+    <!-- Login Container -->
+    <div class="w-full max-w-md">
+        <!-- Logo and Header -->
+        <div class="text-center mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <svg class="h-12 w-12 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                    <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                    <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    <circle cx="20" cy="15" r="3" fill="white"/>
+                </svg>
+                <div class="ml-3">
+                    <h1 class="text-2xl font-inter font-bold text-primary">TN MedConnect</h1>
+                    <p class="text-sm text-text-secondary">Medical Excellence Network</p>
+                </div>
+            </div>
+            <h2 class="text-xl font-inter font-semibold text-secondary mb-2">Welcome Back</h2>
+            <p class="text-text-secondary">Sign in to access your professional dashboard</p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="bg-white rounded-lg shadow-clinical p-8 border border-border">
+            <form id="loginForm" class="space-y-6">
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-text-secondary mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" required class="input-field" placeholder="doctor@example.com" />
+                </div>
+
+                <!-- Password Field -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-text-secondary mb-2">Password</label>
+                    <div class="relative">
+                        <input type="password" id="password" name="password" required class="input-field pr-10" placeholder="Enter your password" />
+                        <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center text-text-secondary hover:text-primary">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input id="remember" name="remember" type="checkbox" class="h-4 w-4 text-primary focus:ring-primary border-border rounded" />
+                        <label for="remember" class="ml-2 block text-sm text-text-secondary">Remember me</label>
+                    </div>
+                    <a href="forgot-password.html" class="text-sm text-primary hover:text-primary-700 transition-clinical">Forgot password?</a>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="hidden bg-error-50 border border-error-200 text-error-700 px-4 py-3 rounded-lg text-sm"></div>
+
+                <!-- Login Button -->
+                <button type="submit" id="loginButton" class="btn-primary w-full">
+                    <span id="loginButtonText">Sign In</span>
+                    <div id="loginSpinner" class="hidden inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin ml-2"></div>
+                </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-border"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-white text-text-secondary">Don't have an account?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sign Up Link -->
+            <div class="mt-6 text-center">
+                <a href="signup.html" class="btn-secondary w-full inline-block">Create Account</a>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-6">
+            <a href="homepage_medical_professional_platform.html" class="text-sm text-text-secondary hover:text-primary transition-clinical">
+                ← Back to Homepage
+            </a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth } from '../js/supabase-config.js';
+
+        // DOM Elements
+        const loginForm = document.getElementById('loginForm');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const togglePasswordBtn = document.getElementById('togglePassword');
+        const loginButton = document.getElementById('loginButton');
+        const loginButtonText = document.getElementById('loginButtonText');
+        const loginSpinner = document.getElementById('loginSpinner');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Toggle password visibility
+        togglePasswordBtn.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+
+        // Handle form submission
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            setLoading(true);
+            hideError();
+
+            const email = emailInput.value.trim();
+            const password = passwordInput.value;
+
+            // Validate inputs
+            if (!email || !password) {
+                showError('Please fill in all fields');
+                setLoading(false);
+                return;
+            }
+
+            try {
+                const result = await auth.signIn(email, password);
+                
+                if (result.success) {
+                    // Redirect to dashboard on successful login
+                    window.location.href = 'professional_dashboard.html';
+                } else {
+                    showError(result.error || 'Login failed. Please try again.');
+                    setLoading(false);
+                }
+            } catch (error) {
+                showError('An unexpected error occurred. Please try again.');
+                setLoading(false);
+            }
+        });
+
+        // Helper functions
+        function setLoading(loading) {
+            if (loading) {
+                loginButton.disabled = true;
+                loginButtonText.textContent = 'Signing In...';
+                loginSpinner.classList.remove('hidden');
+            } else {
+                loginButton.disabled = false;
+                loginButtonText.textContent = 'Sign In';
+                loginSpinner.classList.add('hidden');
+            }
+        }
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.classList.remove('hidden');
+        }
+
+        function hideError() {
+            errorMessage.classList.add('hidden');
+        }
+
+        // Check if user is already logged in
+        window.addEventListener('load', async () => {
+            const { user } = await auth.getCurrentUser();
+            if (user) {
+                window.location.href = 'professional_dashboard.html';
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

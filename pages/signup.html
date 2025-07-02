@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - TN MedConnect</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Join TN MedConnect - Tamil Nadu's premier medical professional platform" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftnmedconn9187back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-gradient-to-br from-primary-50 to-primary-100 min-h-screen flex items-center justify-center font-source-sans py-8">
+    <!-- Signup Container -->
+    <div class="w-full max-w-md">
+        <!-- Logo and Header -->
+        <div class="text-center mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <svg class="h-12 w-12 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                    <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                    <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    <circle cx="20" cy="15" r="3" fill="white"/>
+                </svg>
+                <div class="ml-3">
+                    <h1 class="text-2xl font-inter font-bold text-primary">TN MedConnect</h1>
+                    <p class="text-sm text-text-secondary">Medical Excellence Network</p>
+                </div>
+            </div>
+            <h2 class="text-xl font-inter font-semibold text-secondary mb-2">Join TN MedConnect</h2>
+            <p class="text-text-secondary">Create your professional account</p>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="bg-white rounded-lg shadow-clinical p-8 border border-border">
+            <form id="signupForm" class="space-y-6">
+                <!-- Full Name -->
+                <div>
+                    <label for="fullName" class="block text-sm font-medium text-text-secondary mb-2">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required class="input-field" placeholder="Dr. Your Full Name" />
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-text-secondary mb-2">Professional Email *</label>
+                    <input type="email" id="email" name="email" required class="input-field" placeholder="doctor@hospital.com" />
+                </div>
+
+                <!-- License Number -->
+                <div>
+                    <label for="licenseNumber" class="block text-sm font-medium text-text-secondary mb-2">Medical License Number *</label>
+                    <input type="text" id="licenseNumber" name="licenseNumber" required class="input-field" placeholder="TN/XXXX/YYYY" />
+                </div>
+
+                <!-- Medical Specialty -->
+                <div>
+                    <label for="specialty" class="block text-sm font-medium text-text-secondary mb-2">Medical Specialty *</label>
+                    <select id="specialty" name="specialty" required class="input-field">
+                        <option value>Select Your Specialty</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="internal-medicine">Internal Medicine</option>
+                        <option value="surgery">Surgery</option>
+                        <option value="radiology">Radiology</option>
+                        <option value="anesthesiology">Anesthesiology</option>
+                        <option value="dermatology">Dermatology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="psychiatry">Psychiatry</option>
+                        <option value="gynecology">Gynecology & Obstetrics</option>
+                        <option value="emergency-medicine">Emergency Medicine</option>
+                        <option value="pathology">Pathology</option>
+                        <option value="oncology">Oncology</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Career Stage -->
+                <div>
+                    <label for="careerStage" class="block text-sm font-medium text-text-secondary mb-2">Career Stage *</label>
+                    <select id="careerStage" name="careerStage" required class="input-field">
+                        <option value>Select Career Stage</option>
+                        <option value="medical-student">Medical Student</option>
+                        <option value="intern">Intern</option>
+                        <option value="resident">Resident</option>
+                        <option value="fellow">Fellow</option>
+                        <option value="practicing-physician">Practicing Physician</option>
+                        <option value="consultant">Consultant</option>
+                        <option value="academic">Academic/Professor</option>
+                        <option value="administrator">Healthcare Administrator</option>
+                    </select>
+                </div>
+
+                <!-- Institution -->
+                <div>
+                    <label for="institution" class="block text-sm font-medium text-text-secondary mb-2">Institution/Hospital</label>
+                    <input type="text" id="institution" name="institution" class="input-field" placeholder="Hospital/Clinic Name" />
+                </div>
+
+                <!-- Password Field -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-text-secondary mb-2">Password *</label>
+                    <div class="relative">
+                        <input type="password" id="password" name="password" required class="input-field pr-10" placeholder="Create a strong password" minlength="8" />
+                        <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center text-text-secondary hover:text-primary">
+                            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-1 text-xs text-text-secondary">
+                        Password must be at least 8 characters long
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label for="confirmPassword" class="block text-sm font-medium text-text-secondary mb-2">Confirm Password *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required class="input-field" placeholder="Confirm your password" minlength="8" />
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="flex items-start">
+                    <input id="terms" name="terms" type="checkbox" required class="h-4 w-4 text-primary focus:ring-primary border-border rounded mt-1" />
+                    <label for="terms" class="ml-2 block text-sm text-text-secondary">
+                        I agree to the <a href="#" class="text-primary hover:text-primary-700">Terms of Service</a> and 
+                        <a href="#" class="text-primary hover:text-primary-700">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="hidden bg-error-50 border border-error-200 text-error-700 px-4 py-3 rounded-lg text-sm"></div>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="hidden bg-success-50 border border-success-200 text-success-700 px-4 py-3 rounded-lg text-sm"></div>
+
+                <!-- Signup Button -->
+                <button type="submit" id="signupButton" class="btn-primary w-full">
+                    <span id="signupButtonText">Create Account</span>
+                    <div id="signupSpinner" class="hidden inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin ml-2"></div>
+                </button>
+            </form>
+
+            <!-- Divider -->
+            <div class="mt-6">
+                <div class="relative">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-border"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm">
+                        <span class="px-2 bg-white text-text-secondary">Already have an account?</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Login Link -->
+            <div class="mt-6 text-center">
+                <a href="login.html" class="btn-secondary w-full inline-block">Sign In</a>
+            </div>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-6">
+            <a href="homepage_medical_professional_platform.html" class="text-sm text-text-secondary hover:text-primary transition-clinical">
+                ← Back to Homepage
+            </a>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth } from '../js/supabase-config.js';
+
+        // DOM Elements
+        const signupForm = document.getElementById('signupForm');
+        const togglePasswordBtn = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const signupButton = document.getElementById('signupButton');
+        const signupButtonText = document.getElementById('signupButtonText');
+        const signupSpinner = document.getElementById('signupSpinner');
+        const errorMessage = document.getElementById('errorMessage');
+        const successMessage = document.getElementById('successMessage');
+
+        // Toggle password visibility
+        togglePasswordBtn.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+
+        // Handle form submission
+        signupForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            setLoading(true);
+            hideMessages();
+
+            // Get form data
+            const formData = new FormData(signupForm);
+            const data = Object.fromEntries(formData);
+
+            // Validate inputs
+            if (!validateForm(data)) {
+                setLoading(false);
+                return;
+            }
+
+            try {
+                const result = await auth.signUp(data.email, data.password, {
+                    fullName: data.fullName,
+                    specialty: data.specialty,
+                    careerStage: data.careerStage,
+                    institution: data.institution,
+                    licenseNumber: data.licenseNumber
+                });
+                
+                if (result.success) {
+                    showSuccess('Account created successfully! Please check your email to verify your account.');
+                    signupForm.reset();
+                    
+                    // Redirect to login after 3 seconds
+                    setTimeout(() => {
+                        window.location.href = 'login.html';
+                    }, 3000);
+                } else {
+                    // Handle specific error codes
+                    if (result.code === 'CONFIG_ERROR') {
+                        showError('Service configuration error. Please contact support or try again later.');
+                        console.error('Supabase configuration error - check console for setup instructions');
+                    } else if (result.code === 'NETWORK_ERROR') {
+                        showError(result.error + ' You can also try refreshing the page.');
+                    } else {
+                        showError(result.error || 'Failed to create account. Please try again.');
+                    }
+                }
+            } catch (error) {
+                console.error('Unexpected signup error:', error);
+                
+                // Handle unexpected errors (like network failures)
+                if (error.name === 'TypeError' && error.message.includes('Failed to fetch')) {
+                    showError('Unable to connect to the server. Please check your internet connection and try again.');
+                } else {
+                    showError('An unexpected error occurred. Please refresh the page and try again.');
+                }
+            } finally {
+                setLoading(false);
+            }
+        });
+
+        // Enhanced error display with retry option
+        function showError(message) {
+            // Create retry button for network errors
+            if (message.includes('internet connection') || message.includes('server')) {
+                const retryHtml = `
+                    <div class="flex items-center justify-between">
+                        <span>${message}</span>
+                        <button id="retryButton" class="ml-4 px-3 py-1 bg-error-600 text-white text-xs rounded hover:bg-error-700 transition-colors">
+                            Retry
+                        </button>
+                    </div>
+                `;
+                errorMessage.innerHTML = retryHtml;
+                
+                // Add retry functionality
+                const retryButton = document.getElementById('retryButton');
+                if (retryButton) {
+                    retryButton.addEventListener('click', () => {
+                        signupForm.dispatchEvent(new Event('submit'));
+                    });
+                }
+            } else {
+                errorMessage.textContent = message;
+            }
+            
+            errorMessage.classList.remove('hidden');
+            successMessage.classList.add('hidden');
+        }
+
+        // Form validation
+        function validateForm(data) {
+            if (!data.fullName || !data.email || !data.password || !data.confirmPassword || 
+                !data.specialty || !data.careerStage || !data.licenseNumber) {
+                showError('Please fill in all required fields');
+                return false;
+            }
+
+            if (data.password !== data.confirmPassword) {
+                showError('Passwords do not match');
+                return false;
+            }
+
+            if (data.password.length < 8) {
+                showError('Password must be at least 8 characters long');
+                return false;
+            }
+
+            if (!data.terms) {
+                showError('Please accept the terms and conditions');
+                return false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(data.email)) {
+                showError('Please enter a valid email address');
+                return false;
+            }
+
+            return true;
+        }
+
+        // Helper functions
+        function setLoading(loading) {
+            if (loading) {
+                signupButton.disabled = true;
+                signupButtonText.textContent = 'Creating Account...';
+                signupSpinner.classList.remove('hidden');
+            } else {
+                signupButton.disabled = false;
+                signupButtonText.textContent = 'Create Account';
+                signupSpinner.classList.add('hidden');
+            }
+        }
+
+        function showSuccess(message) {
+            successMessage.textContent = message;
+            successMessage.classList.remove('hidden');
+            errorMessage.classList.add('hidden');
+        }
+
+        function hideMessages() {
+            errorMessage.classList.add('hidden');
+            successMessage.classList.add('hidden');
+        }
+
+        // Check if user is already logged in with error handling
+        window.addEventListener('load', async () => {
+            try {
+                const { user, networkError } = await auth.getCurrentUser();
+                if (user) {
+                    window.location.href = 'professional_dashboard.html';
+                } else if (networkError) {
+                    // Show a subtle warning about connectivity but allow signup to continue
+                    console.warn('Network connectivity issue detected, but signup form is still available');
+                }
+            } catch (error) {
+                console.error('Error checking auth state:', error);
+                // Continue loading the page even if auth check fails
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

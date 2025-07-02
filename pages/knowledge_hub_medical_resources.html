@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knowledge Hub - Medical Resources | TN MedConnect</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Comprehensive medical knowledge repository with peer-reviewed case studies, clinical guidelines, and evidence-based treatment protocols for Tamil Nadu's medical professionals." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftnmedconn9187back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background font-source-sans">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-clinical border-b border-border sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-10 w-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                            <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            <circle cx="20" cy="15" r="3" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h1 class="text-xl font-inter font-bold text-primary">TN MedConnect</h1>
+                        <p class="text-xs text-text-secondary">Medical Excellence Network</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="homepage_medical_professional_platform.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Home</a>
+                        <a href="knowledge_hub_medical_resources.html" class="text-primary font-semibold px-3 py-2 rounded-md text-sm">Knowledge Hub</a>
+                        <a href="career_development_center.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Career Center</a>
+                        <a href="professional_networking_portal.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-clinical">Networking</a>
+                        <a href="professional_dashboard.html" class="btn-primary text-sm">Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-primary-100 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl lg:text-5xl font-inter font-bold text-secondary leading-tight mb-4">
+                    Medical Knowledge <span class="text-gradient">Repository</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Access peer-reviewed case studies, clinical guidelines, and evidence-based treatment protocols tailored for Tamil Nadu's healthcare landscape
+                </p>
+            </div>
+
+            <!-- Advanced Search Interface -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-clinical-lg p-8 border border-border">
+                    <div class="grid lg:grid-cols-3 gap-6">
+                        <!-- Main Search -->
+                        <div class="lg:col-span-2">
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Search Medical Knowledge</label>
+                            <div class="relative">
+                                <input type="text" placeholder="Search cases, conditions, treatments, or guidelines..." class="input-field pr-12" />
+                                <button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-primary hover:text-primary-700">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Voice Search -->
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Voice Search</label>
+                            <button class="w-full bg-primary-50 border border-primary-200 rounded-lg px-4 py-3 flex items-center justify-center hover:bg-primary-100 transition-clinical">
+                                <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z"/>
+                                </svg>
+                                Voice Search
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Filters -->
+                    <div class="grid md:grid-cols-4 gap-4 mt-6">
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Medical Specialty</label>
+                            <select class="input-field">
+                                <option>All Specialties</option>
+                                <option>Cardiology</option>
+                                <option>Orthopedics</option>
+                                <option>Pediatrics</option>
+                                <option>Internal Medicine</option>
+                                <option>Surgery</option>
+                                <option>Radiology</option>
+                                <option>Emergency Medicine</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Content Type</label>
+                            <select class="input-field">
+                                <option>All Types</option>
+                                <option>Case Studies</option>
+                                <option>Clinical Guidelines</option>
+                                <option>Research Papers</option>
+                                <option>Treatment Protocols</option>
+                                <option>Diagnostic Criteria</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Patient Demographics</label>
+                            <select class="input-field">
+                                <option>All Ages</option>
+                                <option>Pediatric</option>
+                                <option>Adult</option>
+                                <option>Geriatric</option>
+                                <option>Maternal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-text-secondary mb-2">Institution</label>
+                            <select class="input-field">
+                                <option>All Institutions</option>
+                                <option>AIIMS Madurai</option>
+                                <option>CMC Vellore</option>
+                                <option>Stanley Medical College</option>
+                                <option>Madras Medical College</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center mt-6">
+                        <button class="text-text-secondary hover:text-primary transition-clinical flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z"/>
+                            </svg>
+                            Reset Filters
+                        </button>
+                        <button class="btn-primary">Search Knowledge Base</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-secondary mb-4">Quick Access Categories</h2>
+                <p class="text-text-secondary">Browse medical knowledge by specialty and content type</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Cardiology</h3>
+                    <p class="text-text-secondary text-sm mb-4">Heart conditions, interventions, and cardiac care protocols</p>
+                    <p class="text-primary font-semibold">1,250+ Resources</p>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3h2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm8 8a1 1 0 100-2 1 1 0 000 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Pediatrics</h3>
+                    <p class="text-text-secondary text-sm mb-4">Child health, development, and pediatric treatments</p>
+                    <p class="text-primary font-semibold">890+ Resources</p>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Surgery</h3>
+                    <p class="text-text-secondary text-sm mb-4">Surgical procedures, techniques, and post-op care</p>
+                    <p class="text-primary font-semibold">675+ Resources</p>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-1.106-1.106A6.002 6.002 0 004 10c0 .639.1 1.255.283 1.836l1.875-1.875zM10 4a5.98 5.98 0 012.516.552L10.954 6.114a4.006 4.006 0 00-1.789-.027L7.603 4.525A5.98 5.98 0 0110 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Radiology</h3>
+                    <p class="text-text-secondary text-sm mb-4">Imaging studies, diagnostic radiology, and interpretation</p>
+                    <p class="text-primary font-semibold">540+ Resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Sections -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Cases from Tamil Nadu -->
+                <div class="card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-secondary ml-3">Cases from Tamil Nadu</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-primary-200 pl-4 pb-4 border-b border-border-light">
+                            <h4 class="font-semibold text-secondary mb-1">Dengue Hemorrhagic Fever Management</h4>
+                            <p class="text-sm text-text-secondary mb-2">Regional outbreak response protocols</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Infectious Disease</span>
+                                <span class="text-xs text-text-secondary">CMC Vellore</span>
+                            </div>
+                        </div>
+
+                        <div class="border-l-4 border-success-200 pl-4 pb-4 border-b border-border-light">
+                            <h4 class="font-semibold text-secondary mb-1">Heat Stroke in Agricultural Workers</h4>
+                            <p class="text-sm text-text-secondary mb-2">Prevention and emergency management</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Emergency Medicine</span>
+                                <span class="text-xs text-text-secondary">Stanley Medical</span>
+                            </div>
+                        </div>
+
+                        <div class="border-l-4 border-warning-200 pl-4">
+                            <h4 class="font-semibold text-secondary mb-1">Snakebite Envenomation Protocol</h4>
+                            <p class="text-sm text-text-secondary mb-2">Rural Tamil Nadu specific guidelines</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Toxicology</span>
+                                <span class="text-xs text-text-secondary">AIIMS Madurai</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 text-primary font-semibold hover:text-primary-700 transition-clinical">
+                        View All Regional Cases →
+                    </button>
+                </div>
+
+                <!-- Latest Research -->
+                <div class="card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3h2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 6V9a1 1 0 112 0v2a1 1 0 11-2 0zm2-6a1 1 0 11-2 0 1 1 0 012 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-secondary ml-3">Latest Research</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-success-50 rounded-lg p-4 border border-success-200">
+                            <div class="flex items-start space-x-3">
+                                <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Research Author" class="w-10 h-10 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <h4 class="font-semibold text-secondary text-sm">AI-Assisted Cardiac Diagnosis</h4>
+                                    <p class="text-xs text-text-secondary">Dr. Rajesh Kumar, AIIMS Madurai</p>
+                                    <p class="text-xs text-success mt-1">Published in IJCM • 2 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-primary-50 rounded-lg p-4 border border-primary-200">
+                            <div class="flex items-start space-x-3">
+                                <img src="https://images.unsplash.com/photo-1594824475317-87eaac2d3e3d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Research Author" class="w-10 h-10 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/06/12/06/people-2592247_1280.jpg'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <h4 class="font-semibold text-secondary text-sm">Pediatric Malnutrition Interventions</h4>
+                                    <p class="text-xs text-text-secondary">Dr. Priya Sharma, CMC Vellore</p>
+                                    <p class="text-xs text-primary mt-1">Under Peer Review • 5 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-warning-50 rounded-lg p-4 border border-warning-200">
+                            <div class="flex items-start space-x-3">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Research Author" class="w-10 h-10 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/03/14/03/20/woman-2141808_1280.jpg'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <h4 class="font-semibold text-secondary text-sm">Telemedicine in Rural Healthcare</h4>
+                                    <p class="text-xs text-text-secondary">Dr. Arun Krishnan, Madras Medical</p>
+                                    <p class="text-xs text-warning mt-1">Collaborative Study • 1 week ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 text-primary font-semibold hover:text-primary-700 transition-clinical">
+                        Browse All Research →
+                    </button>
+                </div>
+
+                <!-- Clinical Guidelines -->
+                <div class="card">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4zm9 1a1 1 0 010-2h4a1 1 0 011 1v4a1 1 0 01-2 0V6.414l-2.293 2.293a1 1 0 11-1.414-1.414L13.586 5H12zm-9 7a1 1 0 012 0v1.586l2.293-2.293a1 1 0 111.414 1.414L6.414 15H8a1 1 0 010 2H4a1 1 0 01-1-1v-4zm13-1a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 010-2h1.586l-2.293-2.293a1 1 0 111.414-1.414L15.586 13H14a1 1 0 01-1-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-secondary ml-3">Clinical Guidelines</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                            <div>
+                                <h4 class="font-semibold text-secondary text-sm">Hypertension Management</h4>
+                                <p class="text-xs text-text-secondary">Updated for Indian population</p>
+                            </div>
+                            <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Updated</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                            <div>
+                                <h4 class="font-semibold text-secondary text-sm">Diabetes Care Protocol</h4>
+                                <p class="text-xs text-text-secondary">Type 2 DM management guidelines</p>
+                            </div>
+                            <span class="text-xs bg-primary-100 text-primary px-2 py-1 rounded">Standard</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                            <div>
+                                <h4 class="font-semibold text-secondary text-sm">Antibiotic Stewardship</h4>
+                                <p class="text-xs text-text-secondary">Resistance prevention protocols</p>
+                            </div>
+                            <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Essential</span>
+                        </div>
+
+                        <div class="flex items-center justify-between p-3 bg-surface rounded-lg border border-border">
+                            <div>
+                                <h4 class="font-semibold text-secondary text-sm">Emergency Triage</h4>
+                                <p class="text-xs text-text-secondary">Priority assessment guidelines</p>
+                            </div>
+                            <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Critical</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full mt-6 text-primary font-semibold hover:text-primary-700 transition-clinical">
+                        Access All Guidelines →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Case Studies -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-secondary mb-4">
+                    Interactive Case Studies
+                </h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Multimedia case presentations with diagnostic images, treatment timelines, and peer discussions
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Featured Case Study -->
+                <div class="card">
+                    <div class="aspect-w-16 aspect-h-9 mb-6 rounded-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Medical Case Study" class="w-full h-48 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <h3 class="text-lg font-inter font-semibold text-secondary">Complex Cardiac Intervention</h3>
+                                <p class="text-text-secondary text-sm">Multi-vessel coronary artery disease with diabetes</p>
+                            </div>
+                            <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">High Complexity</span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 text-center">
+                            <div class="bg-surface rounded-lg p-3">
+                                <div class="text-lg font-inter font-bold text-primary">12</div>
+                                <div class="text-xs text-text-secondary">Images</div>
+                            </div>
+                            <div class="bg-surface rounded-lg p-3">
+                                <div class="text-lg font-inter font-bold text-success">45</div>
+                                <div class="text-xs text-text-secondary">Comments</div>
+                            </div>
+                            <div class="bg-surface rounded-lg p-3">
+                                <div class="text-lg font-inter font-bold text-warning">8.5</div>
+                                <div class="text-xs text-text-secondary">Rating</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Dr. Profile" class="w-10 h-10 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                            <div>
+                                <p class="font-semibold text-secondary text-sm">Dr. Rajesh Kumar</p>
+                                <p class="text-text-secondary text-xs">Senior Cardiologist, AIIMS Madurai</p>
+                            </div>
+                        </div>
+
+                        <button class="w-full btn-primary">Explore Case Study</button>
+                    </div>
+                </div>
+
+                <!-- Case Study List -->
+                <div class="space-y-4">
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a1 1 0 102 0V3h2v1a1 1 0 102 0V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm8 8a1 1 0 100-2 1 1 0 000 2z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary">Pediatric Respiratory Distress</h4>
+                                <p class="text-text-secondary text-sm">Bronchiolitis management in infants</p>
+                                <div class="flex items-center mt-2 space-x-4">
+                                    <span class="text-xs bg-success-100 text-success px-2 py-1 rounded">Pediatrics</span>
+                                    <span class="text-xs text-text-secondary">32 discussions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary">Orthopedic Trauma Case</h4>
+                                <p class="text-text-secondary text-sm">Complex fracture management</p>
+                                <div class="flex items-center mt-2 space-x-4">
+                                    <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded">Orthopedics</span>
+                                    <span class="text-xs text-text-secondary">28 discussions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-16 h-16 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-secondary">Emergency Stroke Protocol</h4>
+                                <p class="text-text-secondary text-sm">Time-critical intervention strategies</p>
+                                <div class="flex items-center mt-2 space-x-4">
+                                    <span class="text-xs bg-accent-100 text-accent px-2 py-1 rounded">Emergency</span>
+                                    <span class="text-xs text-text-secondary">41 discussions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-full text-primary font-semibold hover:text-primary-700 transition-clinical py-3 border border-primary-200 rounded-lg hover:bg-primary-50">
+                        View All Case Studies
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Tools & Resources -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-secondary mb-4">
+                    Medical Tools & Resources
+                </h2>
+                <p class="text-xl text-text-secondary">
+                    Interactive calculators, drug databases, and clinical decision support tools
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2 1 1 0 000-2zm-4-1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Medical Calculators</h3>
+                    <p class="text-text-secondary text-sm mb-4">BMI, GFR, cardiac risk scores, and more</p>
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-clinical">Access Tools</button>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Drug Database</h3>
+                    <p class="text-text-secondary text-sm mb-4">Interactions, dosages, and contraindications</p>
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-clinical">Search Drugs</button>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Clinical Decision Support</h3>
+                    <p class="text-text-secondary text-sm mb-4">Evidence-based diagnostic and treatment aids</p>
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-clinical">Get Support</button>
+                </div>
+
+                <div class="card card-hover text-center">
+                    <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-2">Reference Materials</h3>
+                    <p class="text-text-secondary text-sm mb-4">Quick reference guides and protocols</p>
+                    <button class="text-primary font-semibold hover:text-primary-700 transition-clinical">Browse References</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Knowledge Library -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-inter font-bold text-secondary mb-6">
+                        Build Your Personal Knowledge Library
+                    </h2>
+                    <p class="text-xl text-text-secondary mb-8">
+                        Bookmark important resources, take personal notes, and create your customized reference collection for quick access during patient care.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-secondary">Smart Bookmarking</h3>
+                                <p class="text-text-secondary text-sm">Save and organize resources with intelligent tagging</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01-1.414 1.414L5 6.414V8a1 1 0 01-2 0V4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-secondary">Personal Notes</h3>
+                                <p class="text-text-secondary text-sm">Add private annotations and clinical insights</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-warning-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-secondary">Offline Access</h3>
+                                <p class="text-text-secondary text-sm">Download resources for offline reference</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary mt-8">Start Building Library</button>
+                </div>
+
+                <div class="relative">
+                    <div class="aspect-w-4 aspect-h-5 rounded-lg overflow-hidden shadow-clinical-lg">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Medical Library" class="w-full h-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <!-- Floating Library Stats -->
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-clinical p-4 border border-border">
+                        <div class="text-center">
+                            <div class="text-2xl font-inter font-bold text-primary">2,500+</div>
+                            <div class="text-sm text-text-secondary">Resources Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Contribution -->
+    <section class="py-20 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl lg:text-4xl font-inter font-bold text-white mb-6">
+                    Share Your Medical Expertise
+                </h2>
+                <p class="text-xl text-primary-100 mb-8">
+                    Contribute to Tamil Nadu's medical knowledge base by sharing your cases, insights, and clinical experiences with the community
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-white text-primary px-8 py-4 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-clinical">
+                        Submit Case Study
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-inter font-semibold hover:bg-white hover:text-primary transition-clinical">
+                        Contribute Research
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M20 2C10.06 2 2 10.06 2 20s8.06 18 18 18 18-8.06 18-18S29.94 2 20 2zm0 32c-7.73 0-14-6.27-14-14S12.27 6 20 6s14 6.27 14 14-6.27 14-14 14z"/>
+                            <path d="M20 10c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2s2-.9 2-2v-6c0-1.1-.9-2-2-2zm0 12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            <circle cx="20" cy="15" r="3" fill="white"/>
+                        </svg>
+                        <div class="ml-3">
+                            <h3 class="text-xl font-inter font-bold">TN MedConnect</h3>
+                            <p class="text-secondary-400 text-sm">Medical Excellence Network</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-300 mb-6 max-w-md">
+                        Empowering Tamil Nadu's medical professionals through connected knowledge, collaborative learning, and professional excellence.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="knowledge_hub_medical_resources.html" class="hover:text-white transition-clinical">Knowledge Hub</a></li>
+                        <li><a href="career_development_center.html" class="hover:text-white transition-clinical">Career Center</a></li>
+                        <li><a href="professional_networking_portal.html" class="hover:text-white transition-clinical">Networking</a></li>
+                        <li><a href="professional_dashboard.html" class="hover:text-white transition-clinical">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-secondary-300">
+                        <li><a href="#" class="hover:text-white transition-clinical">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-clinical">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-secondary-700 mt-12 pt-8 text-center text-secondary-400">
+                <p>&copy; 2025 TN MedConnect. All Rights Reserved. | Advancing Tamil Nadu's Medical Excellence</p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
