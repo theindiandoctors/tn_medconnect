@@ -1,0 +1,193 @@
+/*
+Theme Name: TN MedConnect
+Description: A professional medical community platform theme for Tamil Nadu's healthcare professionals. Features modern design, medical specialty customization, and professional networking capabilities.
+Version: 1.0.0
+Author: TN MedConnect Team
+Text Domain: tn-medconnect
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Import Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom CSS Variables for Medical Theme */
+:root {
+    --primary-color: #1e40af;
+    --primary-light: #3b82f6;
+    --primary-dark: #1e3a8a;
+    --secondary-color: #0f172a;
+    --accent-color: #10b981;
+    --success-color: #059669;
+    --warning-color: #f59e0b;
+    --error-color: #dc2626;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --background-light: #f8fafc;
+    --border-color: #e5e7eb;
+    --shadow-clinical: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-clinical-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base Styles */
+body {
+    font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background-light);
+}
+
+/* Medical Professional Typography */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-source-sans {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Medical Theme Components */
+.btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all duration-200 shadow-clinical;
+}
+
+.btn-secondary {
+    @apply bg-white text-primary border border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-200;
+}
+
+.card {
+    @apply bg-white rounded-lg shadow-clinical border border-border p-6;
+}
+
+.card-hover {
+    @apply transition-all duration-200 hover:shadow-clinical-lg hover:-translate-y-1;
+}
+
+.input-field {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200;
+}
+
+/* Medical Specialty Badges */
+.specialty-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.specialty-cardiology { @apply bg-red-100 text-red-800; }
+.specialty-orthopedics { @apply bg-blue-100 text-blue-800; }
+.specialty-pediatrics { @apply bg-green-100 text-green-800; }
+.specialty-surgery { @apply bg-purple-100 text-purple-800; }
+.specialty-radiology { @apply bg-yellow-100 text-yellow-800; }
+
+/* Professional Dashboard Styles */
+.dashboard-stats {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+}
+
+.stat-card {
+    @apply bg-white rounded-lg shadow-clinical p-6 border border-border;
+}
+
+/* Medical Knowledge Hub */
+.knowledge-article {
+    @apply bg-white rounded-lg shadow-clinical border border-border p-6 mb-6;
+}
+
+.article-meta {
+    @apply flex items-center text-sm text-text-secondary mb-4;
+}
+
+/* Professional Networking */
+.connection-card {
+    @apply bg-white rounded-lg shadow-clinical border border-border p-6 flex items-center space-x-4;
+}
+
+.profile-avatar {
+    @apply w-16 h-16 rounded-full bg-primary-100 flex items-center justify-center text-primary font-bold text-xl;
+}
+
+/* CME Tracking */
+.cme-progress {
+    @apply bg-gray-200 rounded-full h-4 overflow-hidden;
+}
+
+.cme-progress-bar {
+    @apply bg-success h-full transition-all duration-300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-stats {
+        @apply grid-cols-2;
+    }
+    
+    .connection-card {
+        @apply flex-col text-center space-x-0 space-y-4;
+    }
+}
+
+/* WordPress Specific Styles */
+.wp-block-navigation {
+    @apply bg-white shadow-clinical border-b border-border;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content {
+    @apply text-text-secondary hover:text-primary transition-colors duration-200;
+}
+
+.wp-block-navigation .wp-block-navigation-item__content:hover {
+    @apply text-primary;
+}
+
+/* Admin Bar Compatibility */
+.admin-bar .site-header {
+    top: 32px;
+}
+
+@media (max-width: 782px) {
+    .admin-bar .site-header {
+        top: 46px;
+    }
+}
+
+/* Accessibility */
+.screen-reader-text {
+    @apply sr-only;
+}
+
+/* Focus States */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    @apply outline-none ring-2 ring-primary ring-offset-2;
+}
+
+/* Loading States */
+.loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-primary;
+}
+
+/* Medical Pattern Background */
+.medical-pattern {
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(30, 64, 175, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 75% 75%, rgba(30, 64, 175, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ccc !important;
+    }
+} 
